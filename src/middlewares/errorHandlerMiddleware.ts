@@ -1,4 +1,5 @@
-import { NextFunction, Request, Response } from "express";
+import { Request, Response } from "express";
+
 import {
   AppError,
   errorTypeToStatusCode,
@@ -8,8 +9,7 @@ import {
 export function errorHandlerMiddleware(
   err: Error | AppError,
   req: Request,
-  res: Response,
-  next: NextFunction
+  res: Response
 ) {
   console.log(err);
 

@@ -1,4 +1,5 @@
 import { faker } from "@faker-js/faker";
+
 import { CreateRecommendationData } from "../../src/services/recommendationsService.js";
 
 export default function recommendationBodyFactory(): CreateRecommendationData {

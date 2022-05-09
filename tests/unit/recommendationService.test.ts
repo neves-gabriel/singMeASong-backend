@@ -1,8 +1,9 @@
-import { recommendationService } from "../../src/services/recommendationsService.js";
-import { recommendationRepository } from "../../src/repositories/recommendationRepository.js";
-import recommendationBodyFactory from "../factories/recommendationBodyFactory.js";
 import { jest } from "@jest/globals";
+
+import { recommendationRepository } from "../../src/repositories/recommendationRepository.js";
+import { recommendationService } from "../../src/services/recommendationsService.js";
 import { conflictError, notFoundError } from "../../src/utils/errorUtils.js";
+import recommendationBodyFactory from "../factories/recommendationBodyFactory.js";
 
 describe("Recommendation Service", () => {
   describe("Insert Recommendations", () => {

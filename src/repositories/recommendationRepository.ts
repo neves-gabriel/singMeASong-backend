@@ -1,4 +1,5 @@
 import { Prisma } from "@prisma/client";
+
 import { prisma } from "../database.js";
 import { CreateRecommendationData } from "../services/recommendationsService.js";
 
@@ -19,7 +20,7 @@ function findAll(findAllWhere?: FindAllWhere) {
   return prisma.recommendation.findMany({
     where: filter,
     orderBy: { id: "desc" },
-    take: 10
+    take: 10,
   });
 }
 
